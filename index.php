@@ -34,7 +34,7 @@
 <script type="text/javascript">
 	
 	function latestProduct(){
-		var search = document.getElementsByName('search')[0].value; 
+		var search = document.getElementsByName('search').value; 
 		destination = "db_code/showLatestProductDb.php?search="+search;
 		var xhr = new XMLHttpRequest();
 		xhr.open("GET", destination, true);
