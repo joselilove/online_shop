@@ -18,7 +18,8 @@ if (isset($_GET['search'])) {
 		echo "Search Now!!";
 	}
 else{
-	$search = $_GET['search'];
+	$search = mysqli_real_escape_string($connect, $_GET['search']);
+	$search = (isset($search)) ? '' : $search;
 	$sql = "SELECT * FROM product where productName LIKE '".$search."%%'";
 	$result = mysqli_query($connect, $sql);
 	while ($row = mysqli_fetch_array($result)) {

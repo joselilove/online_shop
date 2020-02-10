@@ -12,7 +12,7 @@ $div1End = '';
 $div2End = '';
 $liEnd = '';
 	$search = mysqli_real_escape_string($connect, $_GET['search']);
-
+	$search = (isset($search)) ? '' : $search;
 	$query = "select * from product where productName like '".$search."%%'  AND quantity >=1 order by productId DESC limit 6";
 	$result = mysqli_query($connect, $query);
 	while ($row = mysqli_fetch_array($result)) {
@@ -37,4 +37,3 @@ $output = $output.' '.$liStart.' '.$div1Start.' '.$a.' '.$div2Start.' '.$h5.' '.
 	else{
 		echo $output;
 	}
-?>
