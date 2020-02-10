@@ -2,16 +2,16 @@
 <html lang="en">
   <head>
   	<?php
-  	require "db_code\connectDB.php";
-  	require "template\Navbar.php";
-  	require "template\OtherCSS.php";
+  	include 'db_code/connectDB.php';
+  	include 'template/Navbar.php';
+  	include 'template/OtherCSS.php';
   	?>
   </head>
- <?php require 'template\Slider.php';?>
+ <?php include 'template/Slider.php';?>
 <div id="mainBody">
 	<div class="container">
 	<div class="row">
-<?php require 'template\Sidebar.php'; ?>
+<?php include 'template/Sidebar.php'; ?>
 <!-- Sidebar end=============================================== -->
 <!-- Five Star Rating Product start =========================== -->
 		<div class="span9">		
@@ -27,7 +27,7 @@
 <!-- Latest Products end =========================================================-->
 
 <!-- Footer start ================================================================= -->
-<?php require 'template\footer.php'; ?>
+<?php include 'template/footer.php'; ?>
 <!-- Footer end =================================================================== -->
 </body>
 </html>
