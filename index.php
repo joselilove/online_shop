@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
   	<?php
-  	require '\db_code\connectDB.php';
-  	require '\template\Navbar.php';
-  	require '\template\OtherCSS.php';
+  	require "db_code\connectDB.php";
+  	require "template\Navbar.php";
+  	require "template\OtherCSS.php";
   	?>
   </head>
  <?php require 'template\Slider.php';?>
