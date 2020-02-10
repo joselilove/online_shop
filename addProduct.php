@@ -15,9 +15,9 @@
 <html lang="en">
   <head>
     <?php
-  	include 'db_code\connectDB.php';
-  	include 'template\Navbar.php';
-  	include 'template\OtherCSS.php';
+  	require 'db_code\connectDB.php';
+  	require 'template\Navbar.php';
+  	require 'template\OtherCSS.php';
   	?>
   	<script type="text/javascript" src="../NiJo/js/uploadImage.js?v=6"></script>
   	<style type="text/css">
@@ -40,7 +40,7 @@
 	<div class="container">
 	<div class="row">
 <!-- Sidebar ================================================== -->
-	<?php include 'template\Sidebar.php'; ?>
+	<?php require 'template\Sidebar.php'; ?>
 <!-- Sidebar end=============================================== -->
 	<div class="span9">
     <ul class="breadcrumb">
@@ -89,7 +89,7 @@
 </div> </div>
 </div>
 <!-- Footer ================================================================== -->
-	<?php include 'template\footer.php'; ?>
+	<?php require 'template\footer.php'; ?>
 <!-- Footer End ================================================================== -->
 </body>
 </html>
