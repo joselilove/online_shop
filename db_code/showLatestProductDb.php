@@ -32,7 +32,7 @@ $liEnd = '';
 $output = $output.' '.$liStart.' '.$div1Start.' '.$a.' '.$div2Start.' '.$h5.' '.$p.' '.$h4.' '.$div1End.' '.$div2End.' '.$liEnd;
 	}
 	if ($output == '') {
-		echo "Not Found";
+		echo "Not Found.";
 	}
 	else{
 		echo $output;
