@@ -1,8 +1,8 @@
 <?php
 session_start();
-session_unset(); 
+session_unset();
 #header('../index.php');
 ?>
 <script type="text/javascript">
-	document.location = "../index.php";
+    document.location = "../index.php";
 </script>

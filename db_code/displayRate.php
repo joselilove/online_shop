@@ -9,20 +9,16 @@ $query = "SELECT * FROM rate WHERE productIdConnect = '$productId' AND  userIdCo
 $result = mysqli_query($connect, $query);
 
 while ($row = mysqli_fetch_array($result)) {
-		$output = $row['productRate'];
-		$str='';
-		for ($i=0; $i <$row['productRate'] ; $i++) { 
-			$str .= '<span class="fa fa-star checked">	</span>';
-		}
+        $output = $row['productRate'];
+        $str='';
+        for ($i=0; $i <$row['productRate'] ; $i++) { 
+            $str .= '<span class="fa fa-star checked">	</span>';
+        }
 }
 if($output == "" || $output == "0"){
 echo "";
 }
 else{
-	echo $str;
+    echo $str;
 }
 }
-
-
-
-?> 		

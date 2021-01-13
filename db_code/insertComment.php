@@ -11,5 +11,3 @@ $query          = 'INSERT INTO comment(costumerIdConnect,productIdConnect, comme
                                         ('.$_SESSION['userId'].','.$productId.',"'.$comment.'")';
 $result         = mysqli_query($connect, $query);
     }
-
-?>
