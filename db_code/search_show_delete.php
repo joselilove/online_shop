@@ -5,8 +5,8 @@ $id = '';
 $trStart = '';
 $img =    '';
 $productName = '';
-$tdStart = 	  '';
-$divStart =	'';
+$tdStart =       '';
+$divStart =    '';
 $input = '';
 $button = '';
 $divEnd = '';
@@ -25,13 +25,13 @@ if (isset($_GET['search'])) {
             $trStart = '<tr>';
             $img =    '<td> <img width="60" src=' . $row['productImage0'] . ' alt=""/></td>';
             $productName = '<td><a href="product_details.php?productId=' . $row['productId'] . '"> ' . $row['productName'] . '  Brand: ' . $row['brand'] . ', Model: ' . $row['model'] . ' </a></td>';
-            $tdStart = 	  '<td>';
-            $divStart =	'<div class="input-append">';
-            $input =		'<input class="span1" style="max-width:34px" value=' . $row['quantity'] . ' id="appendedInputButtons" size="16" type="text" readonly>';
-            $button =		'<button onclick="confirmation()" class="btn btn-danger" type="button"><i class="icon-remove icon-white"></i></button>';
-            $divEnd = 		'</div>';
-            $tdEnd = 	  '</td>';
-            $trEnd =   '</tr>';
+            $tdStart = '<td>';
+            $divStart = '<div class="input-append">';
+            $input = '<input class="span1" style="max-width:34px" value=' . $row['quantity'] . ' id="appendedInputButtons" size="16" type="text" readonly>';
+            $button = '<button onclick="confirmation()" class="btn btn-danger" type="button"><i class="icon-remove icon-white"></i></button>';
+            $divEnd = '</div>';
+            $tdEnd = '</td>';
+            $trEnd = '</tr>';
             $output = $output . ' ' . $id . ' ' . $trStart . ' ' . $img . ' ' . $productName . ' ' . $tdStart . ' ' . $divStart . ' ' . $input . ' ' . $button . ' ' . $divEnd . ' ' . $tdEnd . ' ' . $trEnd;
         }
     }

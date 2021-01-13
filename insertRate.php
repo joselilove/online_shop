@@ -1,5 +1,5 @@
 <?php
-include 'db_code\connectDB.php';
+include 'db_code/connectDB.php';
 session_start();
 
 if (isset($_SESSION['userId'])) {

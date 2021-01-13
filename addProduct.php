@@ -16,9 +16,9 @@ if (!empty($_FILES['file'])) {
 
 <head>
     <?php
-    include 'db_code\connectDB.php';
-    include 'template\Navbar.php';
-    include 'template\OtherCSS.php';
+    include 'db_code/connectDB.php';
+    include 'template/Navbar.php';
+    include 'template/OtherCSS.php';
     ?>
     <script type="text/javascript" src="../NiJo/js/uploadImage.js?v=6"></script>
     <style type="text/css">
@@ -45,7 +45,7 @@ if (!empty($_FILES['file'])) {
         <div class="container">
             <div class="row">
                 <!-- Sidebar ================================================== -->
-                <?php include 'template\Sidebar.php'; ?>
+                <?php include 'template/Sidebar.php'; ?>
                 <!-- Sidebar end=============================================== -->
                 <div class="span9">
                     <ul class="breadcrumb">
@@ -95,7 +95,7 @@ if (!empty($_FILES['file'])) {
         </div>
     </div>
     <!-- Footer ================================================================== -->
-    <?php include 'template\footer.php'; ?>
+    <?php include 'template/footer.php'; ?>
     <!-- Footer End ================================================================== -->
 </body>
 

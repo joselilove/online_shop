@@ -10,10 +10,6 @@ while ($row = mysqli_fetch_array($result1)) {
     $totalPrice = $totalPrice + $row['totalPrice'];
 }
 
-
-
-
-
 $sql = "SELECT * FROM cart,product, costumer where productIdConnect = productId AND costumerID = userIdConnect AND  userIdConnect = " . $userId . "";
 $result = mysqli_query($connect, $sql);
 while ($row = mysqli_fetch_array($result)) {
@@ -35,7 +31,7 @@ while ($row = mysqli_fetch_array($result)) {
                 </tr>';
     $output = $output . ' ' . $resultCart;
 }
-$showTotalPrice =	'<tr>
+$showTotalPrice = '<tr>
                           <td colspan="4" style="text-align:right"><strong>TOTAL =</strong></td>
                           <td class="label label-important" style="display:block"> <strong> PHP' . $totalPrice . '.00 </strong></td>
                         </tr>';

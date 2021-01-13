@@ -43,7 +43,7 @@
                     </tr>';
         $output = $output . ' ' . $resultCart;
     }
-    $showTotalPrice =	'<tr>
+    $showTotalPrice = '<tr>
                               <td colspan="4" style="text-align:right"><strong>TOTAL =</strong></td>
                               <td class="label label-important" style="display:block"> <strong> PHP' . $totalPrice . '.00 </strong></td>
                             </tr>';

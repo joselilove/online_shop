@@ -3,9 +3,9 @@
 
 <head>
     <?php
-    include 'db_code\connectDB.php';
-    include 'template\Navbar.php';
-    include 'template\OtherCSS.php';
+    include 'db_code/connectDB.php';
+    include 'template/Navbar.php';
+    include 'template/OtherCSS.php';
     ?>
 </head>
 
@@ -37,7 +37,7 @@
         </div>
     </div>
     <!-- Footer ================================================================== -->
-    <?php include 'template\footer.php'; ?>
+    <?php include 'template/footer.php'; ?>
     <!-- Footer end ================================================================== -->
 </body>
 

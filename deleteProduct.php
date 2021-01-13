@@ -3,9 +3,9 @@
 
 <head>
     <?php
-    include 'db_code\connectDB.php';
-    include 'template\Navbar.php';
-    include 'template\OtherCSS.php';
+    include 'db_code/connectDB.php';
+    include 'template/Navbar.php';
+    include 'template/OtherCSS.php';
     ?>
 </head>
 
@@ -14,7 +14,7 @@
         <div class="container">
             <div class="row">
                 <!-- Sidebar ================================================== -->
-                <?php include 'template\Sidebar.php'; ?>
+                <?php include 'template/Sidebar.php'; ?>
                 <!-- Sidebar end=============================================== -->
                 <div class="span9">
                     <ul class="breadcrumb">
@@ -45,7 +45,7 @@
         </div>
     </div>
     <!-- Footer ================================================================== -->
-    <?php include 'template\footer.php'; ?>
+    <?php include 'template/footer.php'; ?>
     <!-- Footer end ================================================================== -->
 </body>
 

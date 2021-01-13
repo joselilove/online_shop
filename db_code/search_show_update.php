@@ -13,7 +13,7 @@ if (isset($_GET['search'])) {
         while ($row = mysqli_fetch_array($result)) {
             $id = '<input type="hidden" name="Id" value=' . $row['productId'] . '>';
             //$productName =  'Product Name: <input type="text" name="productName" placeholder="Product Name" required value='.$row['productName'].'><br>';
-            $productName =	'Product Name: <textarea style="width: 90%;" rows="1" cols="40" name="productName" placeholder="Product Name" required>' . $row['productName'] . '</textarea><br>';
+            $productName = 'Product Name: <textarea style="width: 90%;" rows="1" cols="40" name="productName" placeholder="Product Name" required>' . $row['productName'] . '</textarea><br>';
             $category =
                 "Category:<select name='category' required>
             <option value='Camera'>Camera's</option>
