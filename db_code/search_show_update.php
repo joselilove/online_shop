@@ -8,8 +8,7 @@ if (isset($_GET['search'])) {
 		echo "Search Now!!";
 	}
 	else{
-		$search = mysqli_real_escape_string($connect, $_GET['search']);
-		$search = (isset($search)) ? '' : $search;
+	$search = $_GET['search'];
 	$sql = "SELECT * FROM product WHERE productId = ".$search;
 	$result = mysqli_query($connect, $sql);
 while ($row = mysqli_fetch_array($result)) {
@@ -64,3 +63,4 @@ if($output == ""){
 else{
 	echo $output;
 }
+?>
